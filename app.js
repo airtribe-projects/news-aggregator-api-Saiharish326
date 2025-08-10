@@ -112,7 +112,7 @@ app.get('/users/preferences', authenticateToken, (req, res) => {
             const response = await axios.get('https://newsapi.org/v2/everything', {
                 params: {
                     q: topic,
-                    apiKey: '2e0e30ca588a41d1a92faedb67a1c3b4',
+                    apiKey: NEWS_API_KEY,
                     language: 'en',
                     pageSize: 5
                 }
